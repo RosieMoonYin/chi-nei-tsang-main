@@ -6,8 +6,8 @@ $font-secondary: 'EB Garamond',serif;
 
 $white: #fff;
 $black: #000;
-$darken: #2c396b;
-$darken-2: #3d435c;
+$darken: #4b0c0c;
+$darken-2: #000000;
 
 $primary: #ffb5b5;
 $secondary: #fd6b00;
@@ -60,7 +60,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.4;
-	color: $darken;
+	color: $black;
 	font-weight: 400;
 	font-family: $font-secondary;
 }
