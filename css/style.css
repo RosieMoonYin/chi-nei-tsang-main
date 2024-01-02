@@ -55,7 +55,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #181818;
   text-align: left;
   background-color: #fff; }
 
@@ -417,7 +417,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color:  #dc3545;
   word-break: break-word; }
   a > code {
     color: inherit; }
