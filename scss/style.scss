@@ -9,10 +9,12 @@ $black: #000;
 $darken: #4b0c0c;
 $darken-2: #000000;
 
-$primary: #ffb5b5;
+$primary: #3b9460;
 $secondary: #fd6b00;
 
-
+.whitetext {
+	color: #ccc;
+}
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -604,6 +606,7 @@ h1, h2, h3, h4, h5,
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
+	
 	@include media-breakpoint-down(md){
 		background-position: top right !important;
 	}
@@ -624,10 +627,11 @@ h1, h2, h3, h4, h5,
 		height: 400px;
 		.slider-text{
 			height: 400px !important;
+			color: #ccc;
 		}
 	}
 	.slider-text{
-		color: rgba(0,0,0,.4);
+		color: rgb(67, 59, 59);
 		.icon{
 			position: relative;
 			z-index: 0;
@@ -636,7 +640,7 @@ h1, h2, h3, h4, h5,
 			span{
 				font-size: 80px;
 				line-height: 1.2;
-				color: $primary;
+				color: $white;
 			}
 			&:after{
 				position: absolute;
@@ -2193,4 +2197,8 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+  
+}
+.whitetext {
+	color: #ccc;
 }

@@ -8167,6 +8167,144 @@ h1, h2, h3, h4, h5,
 .text-primary {
   color: #ffb5b5 !important; }
 
+/**NEW NAV CSS lets see**/
+.logo {
+  padding: 2px;
+  margin-top: 1px;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  font-weight: 500;
+  height: 80px;
+  padding: 1em;
+  font-family: "EB Garamond", serif;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu__button--container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*hide burger when top nav is showing*/
+.menu-toggle {
+  display: none;
+}
+
+.menu__button,
+.menu__button::before,
+.menu__button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  /*use of SVG as burger icon, I found this online didnt create it myself!*/
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1); 
+  border-radius: 2px;
+}
+
+.menu__button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu__button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+.menu-toggle:checked + .menu__button--container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+.menu-toggle:checked + .menu__button--container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+.menu-toggle:checked + .menu__button--container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+
+/*media query for when the top nav becomes burger*/
+/*understanding mobile screen width is max 480px but 720px seemed suitable breakpoint for this project otherwise top-nav got squashed*/
+
+@media screen and (max-width: 720px) {
+  /*buger will show with display flex*/
+      .menu__button--container {
+        display: flex;
+      }
+      .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      .menu-toggle:checked ~ .menu li {
+        border: 0px;
+        /*Aparently EM is better than px for reponsive layouts because it responds to text size??*/
+        height: 2.5em;
+        padding: 0.5em;
+        z-index: 1;
+      }
+      .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: #000;
+        background-color: #fff;
+      }
+      .menu > li:not(:last-child) {
+        border-bottom: 0px;
+      }
+}
+
+/**|END OF NEW NAV**/
+
+
+
+
+
 .ftco-navbar-light {
   background: transparent !important;
   position: relative;
@@ -8174,7 +8312,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #000 !important;
+      background: #fff !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
