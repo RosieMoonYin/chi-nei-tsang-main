@@ -8151,7 +8151,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ffb5b5; }
+  color: #000; }
   a:hover, a:active, a:focus {
     color: #ffb5b5;
     outline: none !important;
@@ -8165,7 +8165,7 @@ h1, h2, h3, h4, h5,
   font-family: "EB Garamond", serif; }
 
 .text-primary {
-  color: #ffb5b5 !important; }
+  color: #2a8226 !important; }
 
 /**NEW NAV CSS lets see**/
 .logo {
