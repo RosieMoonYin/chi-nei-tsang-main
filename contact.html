@@ -28,30 +28,48 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('_iN_6J3CAnYmeZm-h');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
   </head>
-  
+
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-  		<div class="container">
-  			<div class="row m-auto">
-  				<div class="col-12 w-100 text-center">
-  					<a class="navbar-brand w-100" href="index.html">Chi Nei Tsang</a>
-			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="oi oi-menu"></span> Menu
-			      </button>
-  				</div>
-  				<div class="col-12 w-100 text-center">
-  					<div class="collapse navbar-collapse" id="ftco-nav">
-			        <ul class="navbar-nav m-auto">
-			          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
-			        </ul>
-			      </div>
-  				</div>
-  			</div>
-  		</div>
-	  </nav>
+    <section class="top-nav">
+      <div class="logo">
+        <img class="logo" src="/images/Brogan_logoskeleton.png" alt="brogan logo">
+      </div>
+      <!--After a lot of researching I found the only way to do this with CSS seemed to be with a checkbox?!-->
+      <input class="menu-toggle" id="menu-toggle" type="checkbox" />
+      <label class='menu__button--container' for="menu-toggle">
+      <div class='menu__button'><i class="fa-solid fa-bars"></i></div>
+    </label>
+      <ul class="menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+			  <li class="nav-item active"><a href="contact.html" class="nav-link">CONTACT</a></li>
+      </ul>
+    </section>
     <!-- END nav -->
 
    
@@ -63,20 +81,22 @@
 				
 					<div class="col-md-1 py-4 py-md-5"></div>
           <div class="col-md-6 ftco-animate py-md-5">
-            <form action="#" class="contact-form">
-            	<div class="row">
 
+            <form action="#" id="contact-form" class="contact-form">
+            	<div class="row">
             		<div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Name">
+	                  <input type="text" name="user_name" class="form-control" placeholder="Your Name">
 	                </div>
                 </div>
 
                 <div class="col-md-6">
 	                <div class="form-group">
-	                  <input type="text" class="form-control" placeholder="Your Email">
+
+	                  <input type="email" name="user_email" class="form-control" placeholder="Your Email">
 	                </div>
 	              </div>
+
                 <div class="col-md-6">
                 <div class="form-group">
                   <select class="form-control" name ="Massage choice" id="selecter">
@@ -94,12 +114,18 @@
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Hello Brogan">
               </div>
+
               <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write your message here... "></textarea>
+                <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Write your message here... "></textarea>
               </div>
+
               <div class="form-group">
                 <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
               </div>
+
+
+
+
             </form>
           </div>
         </div>
@@ -246,12 +272,12 @@
         <div class="row d-flex">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Brogan Sharp</h2>
+
               <p>“Were fascinated by the words - but where we meet is in the silence behind them” Ram Dass</p>
               <ul class="ftco-footer-social list-unstyled float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-envelope"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-phone"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="contact.html"><span class="icon-envelope"></span></a></li>
+				        <li class="ftco-animate"><a href="https://wa.me/46793585529"><span class="icon-phone"></span></a></li>
+				        <li class="ftco-animate"><a href="https://www.instagram.com/brogansherbal?igsh=MWNrMHhoNWlncDZn"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -261,7 +287,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Quick Links</h2>
+
               <ul class="list-unstyled">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -271,7 +297,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Contact Me</h2>
+
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">Stockholm, Sweden</span></li>
@@ -286,12 +312,12 @@
           <div class="col-md-12 text-center">
 
             <p class="mb-0">
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
               Copyright &copy;<script>
                 document.write(new Date().getFullYear());
 
-              </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </script>
+
             </p>
           </div>
         </div>
