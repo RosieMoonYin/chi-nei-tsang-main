@@ -55,27 +55,21 @@
   </head>
 
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-  		<div class="container">
-  			<div class="row m-auto">
-  				<div class="col-12 w-100 text-center">
-  					<a class="navbar-brand w-100" href="index.html">Chi Nei Tsang</a>
-			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="oi oi-menu"></span> Menu
-			      </button>
-  				</div>
-  				<div class="col-12 w-100 text-center">
-  					<div class="collapse navbar-collapse" id="ftco-nav">
-			        <ul class="navbar-nav m-auto">
-			          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-			          <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
-			        </ul>
-			      </div>
-  				</div>
-  			</div>
-  		</div>
-	  </nav>
+    <section class="top-nav">
+      <div class="logo">
+        <img class="logo" src="/images/Brogan_logoskeleton.png" alt="brogan logo">
+      </div>
+      <!--After a lot of researching I found the only way to do this with CSS seemed to be with a checkbox?!-->
+      <input class="menu-toggle" id="menu-toggle" type="checkbox" />
+      <label class='menu__button--container' for="menu-toggle">
+      <div class='menu__button'><i class="fa-solid fa-bars"></i></div>
+    </label>
+      <ul class="menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+			  <li class="nav-item active"><a href="contact.html" class="nav-link">CONTACT</a></li>
+      </ul>
+    </section>
     <!-- END nav -->
 
    
@@ -278,12 +272,12 @@
         <div class="row d-flex">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Brogan Sharp</h2>
+
               <p>“Were fascinated by the words - but where we meet is in the silence behind them” Ram Dass</p>
               <ul class="ftco-footer-social list-unstyled float-lft mt-3">
-                <li class="ftco-animate"><a href="#"><span class="icon-envelope"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-phone"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="contact.html"><span class="icon-envelope"></span></a></li>
+				        <li class="ftco-animate"><a href="https://wa.me/46793585529"><span class="icon-phone"></span></a></li>
+				        <li class="ftco-animate"><a href="https://www.instagram.com/brogansherbal?igsh=MWNrMHhoNWlncDZn"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -293,7 +287,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Quick Links</h2>
+
               <ul class="list-unstyled">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -303,7 +297,7 @@
           </div>
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Contact Me</h2>
+
               <div class="block-23 mb-3">
                 <ul>
                   <li><span class="icon icon-map-marker"></span><span class="text">Stockholm, Sweden</span></li>

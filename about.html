@@ -30,131 +30,25 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-  		<div class="container">
-  			<div class="row m-auto">
-  				<div class="col-12 w-100 text-center">
-  					<a class="navbar-brand w-100" href="index.html">Chi Nei Tsang</a>
-			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="oi oi-menu"></span> Menu
-			      </button>
-  				</div>
-  				<div class="col-12 w-100 text-center">
-  					<div class="collapse navbar-collapse" id="ftco-nav">
-			        <ul class="navbar-nav m-auto">
-			          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-			          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-			          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-			        </ul>
-			      </div>
-  				</div>
-  			</div>
-  		</div>
-	  </nav>
-    <!-- END nav -->
+	<section class="top-nav">
+		<div class="logo">
+		  <img class="logo" src="/images/Brogan_logoskeleton.png" alt="brogan logo">
+		</div>
+		<!--After a lot of researching I found the only way to do this with CSS seemed to be with a checkbox?!-->
+		<input class="menu-toggle" id="menu-toggle" type="checkbox" />
+		<label class='menu__button--container' for="menu-toggle">
+		<div class='menu__button'><i class="fa-solid fa-bars"></i></div>
+	  </label>
+		<ul class="menu">
+		  <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+		  <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+				<li class="nav-item active"><a href="contact.html" class="nav-link">CONTACT</a></li>
+		</ul>
+	  </section>
+      <!-- END nav -->
 
 	
-	    <!-- This section has an image in the middle with 8 benefits around the side -->
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row justify-content-center mb-5 pb-3">
-			  <div class="col-md-12 heading-section ftco-animate text-center">
-				<h2 class="mb-1">Benefits of Chi Nei Tsang</h2>
-			  </div>
-			</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center order-md-last">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-md-right pl-4 pl-md-0 pr-md-4">
-									<h3>Balance Energy &amp; Emotions</h3>
-									<p>Chi Nei Tsang aims to balance the flow of chi within the body, which is believed to be essential for overall well-being.</p>
-								</div>
-							</div>
-							<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center order-md-last">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-md-right pl-4 pl-md-0 pr-md-4">
-					<h3>Improved Circulation</h3>
-									<p>By promoting better blood and energy circulation, Chi Nei Tsang can enhance overall vitality and the body's natural healing abilities.
-					</p>
-								</div>
-							</div>
-							<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center order-md-last">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-md-right pl-4 pl-md-0 pr-md-4">
-									<h3>Digestive Health</h3>
-									<p>Chi Nei Tsang can improve digestion by addressing issues like constipation, bloating, and abdominal discomfort, encouraging healthy function and flow of the digestive organs.</p>
-								</div>
-							</div>
-							<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center order-md-last">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-md-right pl-4 pl-md-0 pr-md-4">
-									<h3>Stress Reduction</h3>
-									<p>This massage technique relaxes the abdominal muscles and nervous system, reducing stress and promoting relaxation.</p>
-								</div>
-							</div>
-					</div>
-	
-	
-	
-					<div class="col-md-4 d-flex">
-						<div class="img img-services w-100" style="background-image: url(images/Brogan_waterleaf.jpg);"></div>
-					</div>
-	
-					<div class="col-md-4">
-						<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center\">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-left pl-4">
-									<h3>Detoxification</h3>
-									<p>By stimulating the organs in the abdomen, Chi Nei Tsang can support the detoxification processes, helping the body eliminate waste and toxins more effectively.
-					</p>
-								</div>
-							</div>
-							<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center\">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-left pl-4">
-									<h3>Pain Relief</h3>
-									<p> It may alleviate abdominal pain and discomfort associated with conditions like irritable bowel syndrome (IBS), menstrual cramps, and organ-related issues.</p>
-								</div>
-							</div>
-	
-				<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center\">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-left pl-4">
-					<h3>Increased Awareness</h3>
-									<p>Through abdominal massage, individuals may develop a heightened awareness of their body's internal energy, leading to a deeper connection with their inner selves.</p>
-									
-								</div>
-							</div>
-	
-				<div class="services-2 ftco-animate d-flex w-100">
-								<div class="icon d-flex justify-content-center align-items-center\">
-									<span class="flaticon-meditation"></span>
-								</div>
-								<div class="text text-left pl-4">
-					<h3>Helps Dissolve Blockages</h3>
-									<p>Stagnant energy and emotions can be stored over time  in the abdomen, releasing this supports spiritual harmony, emotional clarity and overall well being. </p>
-								</div>
-								</div>
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
+
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/Brogan_bg_2b.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
@@ -320,126 +214,7 @@
 
 	
 	
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-10 heading-section ftco-animate text-center">
-            <h3 class="subheading">YOUR STORIES</h3>
-            <h2 class="mb-1">Reflections</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel">
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="text">
-                  	<div class="line">
-	                    <p class="mb-4 pb-1">I can thoroughly recommend Brogan, she has such a calm presence and healing touch. She is a gifted practitioner of Chi Nei Tsang, I look forward to the next session I always feel so held.</p>
-	                    <span class="quote d-flex align-items-center justify-content-center">
-	                      <i class="icon-quote-left"></i>
-	                    </span>
-	                  </div>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Brogan_closeleaf.jpg)">
-		                  </div>
-		                  <div class="ml-4">
-		                  	<p class="name">Rosie Burnett</p>
-		                    <span class="position">Customer</span>
-		                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="text">
-                    <div class="line">
-	                    <p class="mb-4 pb-1">Brogan has a special kind of magic its hard to explain in words since this experience is beyond words. I really appreciate how present she is with her touch I felt so safe and taken care of.</p>
-	                    <span class="quote d-flex align-items-center justify-content-center">
-	                      <i class="icon-quote-left"></i>
-	                    </span>
-	                  </div>
-
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Brogan_closeleaf.jpg)">
-		                  </div>
-		                  <div class="ml-4">
-		                  	<p class="name">Anna Kaiser</p>
-		                    <span class="position">Customer</span>
-		                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="text">
-                    <div class="line">
-	                    <p class="mb-4 pb-1">I have chosen the 5 x package, the traditional way of Chi Nei Tsang is to have multiple sessions, I felt that each time Brogan was accessing deeper layers.</p>
-	                    <span class="quote d-flex align-items-center justify-content-center">
-	                      <i class="icon-quote-left"></i>
-	                    </span>
-	                  </div>
-
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Brogan_closeleaf.jpg)">
-		                  </div>
-		                  <div class="ml-4">
-		                  	<p class="name">Phil Turtle</p>
-		                    <span class="position">Customer</span>
-		                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="text">
-                    <div class="line">
-	                    <p class="mb-4 pb-1">I loved how Brogan talked me throught the process first and enquired into my needs, i felt she really tailored the experience to my unique energy body. thankyou!</p>
-	                    <span class="quote d-flex align-items-center justify-content-center">
-	                      <i class="icon-quote-left"></i>
-	                    </span>
-	                  </div>
-
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Brogan_closeleaf.jpg)">
-		                  </div>
-		                  <div class="ml-4">
-		                  	<p class="name">Joan Sharp</p>
-		                    <span class="position">Customer</span>
-		                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap p-4 pb-5">
-                  <div class="text">
-                    <div class="line">
-	                    <p class="mb-4 pb-1">It was my frist time trying Chi Nei Tsang massage and my experience this was really special, I was able to fully relax and I felt so light after the session.</p>
-	                    <span class="quote d-flex align-items-center justify-content-center">
-	                      <i class="icon-quote-left"></i>
-	                    </span>
-	                  </div>
-
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/Brogan_closeleaf.jpg)">
-		                  </div>
-		                  <div class="ml-4">
-		                  	<p class="name">Joe Manchester</p>
-		                    <span class="position">Customer</span>
-		                  </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+   
 
     <!-- HERES THE FOOTER -->
     <footer class="ftco-footer ftco-section bg-light">
