@@ -1545,6 +1545,8 @@ pre {
     background-color: rgba(255, 255, 255, 0.075); }
 
 @media (max-width: 575.98px) {
+
+  }
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -1554,6 +1556,8 @@ pre {
       border: 0; } }
 
 @media (max-width: 767.98px) {
+
+  }
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -8181,8 +8185,8 @@ h1, h2, h3, h4, h5,
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: #000000;
-  font-weight: 500;
+  color: #b2ac882a;
+  font-weight: 400;
   height: 80px;
   padding: 1em;
   font-family: "EB Garamond", serif;
